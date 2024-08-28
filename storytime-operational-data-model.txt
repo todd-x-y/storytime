@@ -1,0 +1,66 @@
+Sheet 1: User Profiles
+Columns:
+A. User ID (auto-generated)
+B. Username (unique)
+C. Display Name (optional)
+D. Email (hashed for privacy)
+E. Join Date
+F. Reading Interests (comma-separated tags)
+G. Privacy Settings (JSON: {"showEmail": bool, "showInterests": bool, "showActivity": bool})
+H. Activity Score (calculated based on participation)
+
+Sheet 2: Book Catalog (existing, with modifications)
+Columns:
+A. Book ID
+B. Title
+C. Author
+D. Genre
+E. Description
+F. Votes
+G. Tags (comma-separated)
+
+Sheet 3: Events Calendar (existing, with modifications)
+Columns:
+A. Event ID
+B. Book ID
+C. Date
+D. Time
+E. Host User ID
+F. Participants (comma-separated User IDs)
+G. Status (Scheduled, Cancelled, Completed)
+H. Event Tags (comma-separated)
+
+Sheet 4: Community Message Board
+Columns:
+A. Post ID
+B. User ID
+C. Timestamp
+D. Content
+E. Tags (comma-separated)
+F. Related Book ID (optional)
+G. Related Event ID (optional)
+H. Parent Post ID (for replies, optional)
+I. Likes (comma-separated User IDs)
+
+Sheet 5: Tag Index
+Columns:
+A. Tag
+B. Type (User, Book, Event, Post)
+C. Associated IDs (comma-separated)
+
+Sheet 6: User Activity Log
+Columns:
+A. Activity ID
+B. User ID
+C. Timestamp
+D. Activity Type (Post, Like, Join Event, etc.)
+E. Related ID (Post ID, Event ID, etc.)
+
+Functions:
+1. Create User Profile: Add a new row to User Profiles, generate User ID
+2. Update Privacy Settings: Modify the Privacy Settings JSON in User Profiles
+3. Create Post: Add a new row to Community Message Board, update Tag Index
+4. Add Event: Add a new row to Events Calendar, update Tag Index
+5. Search by Tag: Query Tag Index, return associated items from respective sheets
+6. Calculate User Activity Score: Count user's activities in User Activity Log
+7. Get User Public Profile: Return user info based on their privacy settings

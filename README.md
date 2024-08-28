@@ -7,7 +7,7 @@ Storytime: A spreadsheet-based microtool that curates book discussions and sched
 
 Storytime is a spreadsheet-based microtool that curates book discussions and schedules, enabling readers to effortlessly form and join book clubs around shared interests and availability.
 
-![Storytime Logo](https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo1.png)
+![Storytime Logo](https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/vg7q9ZMdCJ30wokSfvTK/pub/CK64LlWKmM3cFVjMQbd5.png)
 
 ## Table of Contents
 - [Overview](#overview)

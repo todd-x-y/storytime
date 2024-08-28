@@ -1,0 +1,57 @@
+Sheet 1: User Profiles
+Columns:
+A. User ID
+B. Username
+C. Email
+D. Interests (comma-separated)
+E. Books Read (comma-separated)
+
+Sheet 2: Book Catalog
+Columns:
+A. Book ID
+B. Title
+C. Author
+D. Genre
+E. Description
+F. Votes
+
+Sheet 3: Events Calendar
+Columns:
+A. Event ID
+B. Book ID
+C. Date
+D. Time
+E. Host User ID
+F. Participants (comma-separated User IDs)
+G. Status (Scheduled, Cancelled, Completed)
+
+Sheet 4: Voting System
+Columns:
+A. Vote ID
+B. Book ID
+C. User ID
+D. Vote Type (Upvote/Downvote)
+E. Timestamp
+
+Sheet 5: Dashboard
+A1: Total Users
+B1: =COUNTA(UserProfiles!A:A) - 1
+
+A2: Total Books
+B2: =COUNTA(BookCatalog!A:A) - 1
+
+A3: Upcoming Events
+B3: =COUNTIF(EventsCalendar!G:G, "Scheduled")
+
+A5: Top 5 Voted Books
+B5: =SORT(BookCatalog!B:F, 5, FALSE)
+
+A12: Recent Events
+B12: =SORT(EventsCalendar!B:G, 3, FALSE)
+
+Functions:
+1. Add User: Append a new row to the User Profiles sheet
+2. Add Book: Append a new row to the Book Catalog sheet
+3. Schedule Event: Append a new row to the Events Calendar sheet
+4. Vote on Book: Append a new row to the Voting System sheet and update the Votes column in the Book Catalog sheet
+5. Join Event: Update the Participants column in the Events Calendar sheet

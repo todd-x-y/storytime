@@ -71,7 +71,7 @@ We welcome contributions to Storytime! If you have ideas for improvements or new
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Storytime is distributed under the GNU Affero General Public License v3.0 (AGPL-3.0). This license ensures that the software and any modifications remain open source, even when run as a network service. For more details, see the LICENSE file in the repository or visit GNU AGPL v3.0. See `LICENSE` for more information.
 
 ---
 
